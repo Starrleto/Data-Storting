@@ -1,0 +1,11 @@
+body{
+    overflow-x: hidden;
+}
+
+.sidebar{
+    background-color: rgb(202, 214, 224);
+}
+
+.body{
+    height: 100vh;
+}

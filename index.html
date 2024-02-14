@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="./style/style.css" rel="stylesheet">
+    </head>
+  <body>
+    
+    <div>
+        <div class="row body">
+            <div class="col-3 sidebar">
+                <h3>Options</h3>
+                <div>
+                    <h4>Order</h4>
+                    <button type="button" class="btn btn-primary" id="asc">Ascending</button>
+                    <button type="button" class="btn btn-info" id="desc">Descending</button>
+                </div>
+                <div>
+                    <h4>Sort by</h4>
+                    <button type="button" class="btn btn-info" id="sortID">ID</button>
+                    <button type="button" class="btn btn-info" id="sortFirst">First Name</button>
+                    <button type="button" class="btn btn-info" id="sortLast">Last Name</button>
+                    <button type="button" class="btn btn-info" id="sortHeight">Height</button>
+                    <button type="button" class="btn btn-info" id="sortAge">Age</button>
+                </div>
+                <div>
+                    <h4>Amount Shown</h4>
+                    <button type="button" class="btn btn-info" id="10">10</button>
+                    <button type="button" class="btn btn-info" id="20">20</button>
+                    <button type="button" class="btn btn-info" id="30">30</button>
+                    <button type="button" class="btn btn-info" id="40">40</button>
+                    <button type="button" class="btn btn-primary" id="50">50</button>
+                </div>
+            </div>
+            <div class="col-9">
+                <div id="container">
+                    <h1>People</h1>
+
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination" id="linkContainer">
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div id="pageContainer">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./script/getData.js"></script>
+    <script type="module" src="./script/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
