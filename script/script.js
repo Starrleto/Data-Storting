@@ -23,6 +23,7 @@ const sortFirst = document.getElementById("sortFirst");
 const sortLast = document.getElementById("sortLast");
 const sortAge = document.getElementById("sortAge");
 const sortHeight = document.getElementById("sortHeight");
+const page = document.getElementById("page")
 
 const numberButtons = []
 numberButtons.push(document.getElementById("10"));
@@ -91,6 +92,7 @@ function getPages(array){
 
         li.addEventListener('click', function(e){
             populatePage(arrayPages[i]);
+            page.innerText = "Page "+(i+1);
         })
     }
 }
@@ -98,6 +100,7 @@ function getPages(array){
 function populatePage(array){
 
     pageContainer.innerHTML = '';
+    page.innerText = "Page 1";
     array.forEach(element => {
         const div = document.createElement("div");
         pageContainer.appendChild(div);
